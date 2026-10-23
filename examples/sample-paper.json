@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "kind": "paper",
+  "title": "Practice paper format example",
+  "instructions": "Answer every part. Written and table responses are self-assessed after submission.",
+  "durationMinutes": 10,
+  "sections": [
+    {
+      "id": "concepts",
+      "title": "Question 1 — Concepts",
+      "context": "Choose True or False for each statement."
+    },
+    {
+      "id": "explain",
+      "title": "Question 2 — Explanation",
+      "context": "Explain your reasoning briefly."
+    },
+    {
+      "id": "table",
+      "title": "Question 3 — Calculations",
+      "context": "For this example, completion time is arrival time plus duration.\n\n| Item | Arrival | Duration |\n| --- | --- | --- |\n| A | 0 | 2 |\n| B | 2 | 2 |"
+    }
+  ],
+  "questions": [
+    {
+      "id": "tf1",
+      "sectionId": "concepts",
+      "label": "1.1",
+      "type": "true-false",
+      "text": "A fixed paper preserves the original question order.",
+      "answer": ["true"],
+      "explanation": "All questions appear in their imported order.",
+      "marks": 1
+    },
+    {
+      "id": "tf2",
+      "sectionId": "concepts",
+      "label": "1.2",
+      "type": "true-false",
+      "text": "Leaving a timed paper pauses its countdown.",
+      "answer": ["false"],
+      "explanation": "The deadline is saved and continues across navigation.",
+      "marks": 1
+    },
+    {
+      "id": "short",
+      "sectionId": "explain",
+      "label": "2.1",
+      "type": "short",
+      "text": "Explain why a model answer should allow equivalent wording.",
+      "answer": [
+        "Equivalent wording can express the same correct ideas. A rubric should assess the concepts and reasoning rather than demand exact text."
+      ],
+      "explanation": "Several valid phrasings may communicate the same understanding.",
+      "marks": 3,
+      "rubric": "1 mark for recognizing equivalent wording; 1 for assessing concepts; 1 for assessing reasoning. Accept other valid explanations."
+    },
+    {
+      "id": "grid",
+      "sectionId": "table",
+      "label": "3.1",
+      "type": "table",
+      "text": "Complete the calculation table.",
+      "table": {
+        "rows": ["A", "B"],
+        "columns": ["Completion", "Duration"]
+      },
+      "answer": ["2", "2", "4", "2"],
+      "explanation": "Add arrival to duration for each completion time.",
+      "marks": 5,
+      "rubric": "1 mark for each correct cell (4 total), plus 1 for a consistent completed table. Equivalent numeric formats are acceptable."
+    }
+  ]
+}
